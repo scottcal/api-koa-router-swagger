@@ -1,0 +1,26 @@
+{
+  "name": "api-koa-router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "koa-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "koa": "nodemon koa-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-convert": "^2.0.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "swagger-jsdoc": "^6.2.1",
+    "swagger-ui-koa": "^0.0.1"
+  }
+}
