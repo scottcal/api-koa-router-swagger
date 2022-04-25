@@ -1,9 +1,10 @@
+const { HttpError } = require("koa");
 
 const options = {
     definition: {
         openapi: '3.0.0',
         info: {
-            title: 'Hello World',
+            title: 'My Test API',
             version: '1.0.0',
             description: 'this is our sample API, no muc here yet'
         },
@@ -15,6 +16,17 @@ const options = {
         ],
         paths: {
             "/pets": {}
+        },
+        components: {
+            securitySchemes: {
+                basicAuth: {
+                    type: "http",
+                    scheme: "basic"
+                },
+            }
+        },
+        security: {
+            basicAuth: [],
         }
     },
     apis: ['./routes/*.js'], // files containing annotations as above
